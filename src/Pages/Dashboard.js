@@ -69,7 +69,9 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox"></div>
+      <div className="flexbox">
+        <UserChart />
+      </div>
     </div>
   );
 };

@@ -3,7 +3,7 @@ import logo from "../favicon.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-light bg-blue">
+    <nav className="navbar">
       <div className="flexbox">
         <img className="navbar-brand" src={logo} alt="" />
         <h1>Admin.js</h1>

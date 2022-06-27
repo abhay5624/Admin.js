@@ -93,6 +93,7 @@ aside {
   color: black;
 }
 .Dashboard {
+  margin-top: 7vw;
   padding: 30px;
   background-color: rgb(235, 235, 235);
 }
@@ -147,6 +148,12 @@ aside {
   max-width: 80%;
   background-color: rgb(152, 57, 207);
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100vw;
+}
 .line3 {
   border-radius: 6px;
   min-height: 5px;
@@ -160,4 +167,19 @@ aside {
   color: white;
   padding: 30px 30px;
   border-radius: 60px;
+}
+.Userchart {
+  width: 65%;
+
+  background-color: white;
+  margin-left: 25px;
+  padding: 30px;
+}
+.reports {
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 20px;
+}
+.stats {
+  font-weight: 500;
 }
