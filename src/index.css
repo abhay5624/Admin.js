@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  background-color: #317eeb;
+  align-items: center;
+
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  justify-content: space-between;
+}
+nav img {
+  width: 60px;
+  margin: 20px;
+  margin-left: 40px;
+}
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+aside {
+  border-right: 2px hwb(0 64% 33% / 0.507) solid;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  left: 0%;
+  top: 103px;
+}
+.AdminPannel {
+  padding: 30px;
+  max-height: fit-content;
+}
+.AdminPannel img {
+  height: 10vh;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.AdminPannel h4 {
+  padding: 5px;
+  text-align: center;
+  font-family: "Intel", sans-serif;
+  font-weight: 400;
+}
+.AdminPannel h3 {
+  padding: 5px;
+}
+.lowlight {
+  font-size: small;
+  color: rgb(73, 71, 71);
+}
+.Articals {
+  width: 80%;
+  margin-left: 20%;
+}
+.linkList {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  height: 300px;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.linkList a {
+  text-decoration: none;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  font-weight: 600;
+}
+.ActiveLink {
+  border-radius: 0 25px 25px 0px;
+  width: 100%;
+  background-color: #317eeb;
+  color: white;
+}
+.UnActiveLink {
+  color: black;
+}
+.Dashboard {
+  padding: 30px;
+  background-color: rgb(235, 235, 235);
+}
+.box1,
+.box2 {
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+  min-width: 25%;
+  min-height: 200px;
+  margin: 20px;
+}
+.boxicon {
+  justify-content: space-evenly;
+}
+.CartSign {
+  font-size: 30px;
+  background-color: rgb(152, 57, 207);
+  color: white;
+  padding: 30px 30px;
+  border-radius: 60px;
+}
+.dollersign {
+  font-size: 30px;
+  background-color: rgb(126, 226, 126);
+  color: white;
+  padding: 30px 40px;
+  border-radius: 60px;
+}
+.detail {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.lineholder {
+  min-height: 7px;
+  min-width: 100%;
+  background-color: rgb(219, 219, 219);
+  margin-top: 15px;
+  border-radius: 6px;
+}
+.line {
+  border-radius: 6px;
+  min-height: 5px;
+  margin: 1px;
+  max-width: 70%;
+  background-color: rgb(126, 226, 126);
+}
+.line2 {
+  border-radius: 6px;
+  min-height: 5px;
+  margin: 1px;
+  max-width: 80%;
+  background-color: rgb(152, 57, 207);
+}
+.line3 {
+  border-radius: 6px;
+  min-height: 5px;
+  margin: 1px;
+  max-width: 50%;
+  background-color: #ec68ba;
+}
+.Userplus {
+  background-color: #ec68ba;
+  font-size: 30px;
+  color: white;
+  padding: 30px 30px;
+  border-radius: 60px;
 }
