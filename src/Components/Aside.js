@@ -53,7 +53,7 @@ const Aside = () => {
 
   return (
     <aside>
-      <div className="AdminPannel flexbox">
+      <div className="AdminPannel flexbox" style={{ flexWrap: "wrap" }}>
         <div>
           <img src={Avatar} alt="Avatar" />
         </div>

@@ -6,6 +6,7 @@ import {
   faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import UserChart from "../Components/UserChart";
+import PagesChart from "../Components/PagesChart";
 const Dashboard = () => {
   return (
     <div className="Dashboard">
@@ -69,8 +70,12 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className="flexbox">
+      <div
+        className="flexbox"
+        style={{ minHeight: "fit-content", minWidth: "100%" }}
+      >
         <UserChart />
+        <PagesChart />
       </div>
     </div>
   );

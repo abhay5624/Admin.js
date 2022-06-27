@@ -7,6 +7,8 @@ import "font-awesome/css/font-awesome.min.css";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import rootReducer from "./Reducers";
+import { Chart as ChartJS, registerables } from "chart.js";
+ChartJS.register(...registerables);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const store = createStore(
   rootReducer,
