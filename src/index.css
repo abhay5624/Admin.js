@@ -321,7 +321,8 @@ aside {
   color: #317eeb;
 }
 .Overview,
-.mission {
+.mission,
+.teams {
   position: relative;
   margin: 1vw;
   background-color: #ffffff;
@@ -342,6 +343,15 @@ aside {
   font-size: 18px;
   line-height: 22px;
   padding-block: 20px;
+}
+.teams button {
+  padding: 8px 30px;
+  background-color: #317eeb;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
 }
 .mission button {
   padding: 8px 30px;
@@ -395,4 +405,13 @@ aside {
   bottom: 0%;
   background-color: rgba(0, 0, 0, 0.433);
   z-index: 4;
+}
+.member {
+  margin-top: 40px;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  padding: 2vw;
+}
+.member img {
+  width: 40%;
 }

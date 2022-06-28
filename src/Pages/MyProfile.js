@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Overview from "../Components/Overview";
 import Mission from "../Components/Mission";
+import Teams from "../Components/Teams";
 const MyProfile = () => {
   const data = useSelector((state) => state.MyProfile);
   return (
@@ -22,6 +23,7 @@ const MyProfile = () => {
       </div>
       <Overview />
       <Mission />
+      <Teams />
     </div>
   );
 };

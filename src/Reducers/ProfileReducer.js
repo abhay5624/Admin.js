@@ -22,7 +22,7 @@ const init = {
       position: "Co-Founder",
       name: "Abhay Sharma",
       role: "Web Developer",
-      Des: "The web of Books and sale have Been Developed by Mr. Abhay Sharmax. He is a BCA student",
+      Des: "The web of Books-n-Trade have Been Developed by Mr. Abhay Sharmax. He is a BCA student",
       img: image,
     },
   ],
