@@ -1,4 +1,4 @@
-export let chart = {
+const init = {
   labels: ["0", "1", "2", "3", "4", "5", "6"],
   datasets: [
     {
@@ -25,28 +25,12 @@ export let chart = {
     },
   ],
 };
-const border_color = [
-  "rgba(0, 141, 230, 1)",
-  "rgb(152, 57, 207)",
-  "rgb(126, 226, 126)",
-  "#ec68ba",
-];
-const background_color = [
-  "rgba(0, 141, 230, 0.75)",
-  "rgba(152, 57, 207,0.75)",
-  "rgba(126, 226, 126,0.75)",
-  "rgba(236,104,186,0.75)",
-];
-export let Dochart = {
-  labels: ["Home Page", "About Page", "Blog Page", "Books Pag"],
-  datasets: [
-    {
-      label: "Visit",
-      data: [500, 1200, 400, 300],
-      backgroundColor: background_color,
-      borderColor: border_color,
-      borderWidth: 2,
-      fill: true,
-    },
-  ],
+const lineChartData = (state = init, action) => {
+  switch (action.type) {
+    case "UBDATE_STATE":
+      return action.payload;
+    default:
+      return state;
+  }
 };
+export default lineChartData;

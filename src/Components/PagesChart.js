@@ -1,10 +1,21 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
-import { Dochart } from "../Data";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux/es/exports";
 const PagesChart = () => {
+  const Dochart = useSelector((state) => state.DonnutChart);
   return (
     <div className="DonnutChart">
-      <h3>Website stats</h3>
+      <div
+        className="flexbox"
+        style={{ justifyContent: "space-between", paddingBottom: "20px" }}
+      >
+        <h3 st>Website stats</h3>
+        <FontAwesomeIcon icon={faXmark} />
+      </div>
+
       <Doughnut data={Dochart} />
       <div
         className="flexbox"

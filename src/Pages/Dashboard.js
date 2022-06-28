@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import UserChart from "../Components/UserChart";
 import PagesChart from "../Components/PagesChart";
+import FormReceives from "../Components/FormReceives";
 const Dashboard = () => {
   return (
     <div className="Dashboard">
@@ -77,6 +78,7 @@ const Dashboard = () => {
         <UserChart />
         <PagesChart />
       </div>
+      <FormReceives />
     </div>
   );
 };

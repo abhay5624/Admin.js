@@ -94,8 +94,10 @@ aside {
 }
 .Dashboard {
   margin-top: 50px;
-  padding: 30px;
-  background-color: rgb(235, 235, 235);
+  padding: 8%;
+  padding-top: 5%;
+  padding-left: 5%;
+  background-color: rgb(247, 244, 244);
 }
 .Dashboard h3 {
   padding-left: 30px;
@@ -201,4 +203,19 @@ aside {
 .DonnutChart h3 {
   text-align: center;
   padding: 0;
+}
+.formReceives {
+  background-color: white;
+  max-width: 40%;
+  margin-left: 1.2vw;
+  margin-top: 2vw;
+  padding: 40px;
+}
+.formReceives h3 {
+  font-weight: 600;
+  padding: 5px;
+}
+.formsection {
+  padding: 10px;
+  margin: 5px;
 }

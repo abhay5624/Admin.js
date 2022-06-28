@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { chart } from "../Data";
+
 import { Line } from "react-chartjs-2";
 import { Chart as ChartJS, registerables } from "chart.js";
-import { Chart } from "react-chartjs-2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useSelector } from "react-redux";
 ChartJS.register(...registerables);
 const UserChart = () => {
+  const data = useSelector((state) => state.LineChart);
   ChartJS.defaults.font.size = 12;
   ChartJS.defaults.font.family = "Poppins";
-  console.log(Chart);
-  const [data, setdata] = useState(chart);
-  useEffect(() => {
-    setdata(chart);
-  }, [chart]);
-
   return (
     <div className="Userchart">
-      <h3 className="stats">Website Stats</h3>
+      <h3 className="stats">
+        <div
+          className="flexbox"
+          style={{ justifyContent: "space-between", paddingBottom: "20px" }}
+        >
+          <h3 st>Website stats</h3>
+          <FontAwesomeIcon icon={faXmark} />
+        </div>
+      </h3>
       <div className="chart">
         <Line
           data={data}
