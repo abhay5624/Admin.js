@@ -1,8 +1,9 @@
 import image from "../Assets/myAvatar.jfif";
 import shobhitImage from "../Assets/shobhit.jpg";
+import logo from "../Assets/Booklogo.png";
 const init = {
   Company_name: "Books-n-Trade",
-  pic: "https://lh3.googleusercontent.com/-rDCvRrvT0WNiepIu0KrbpZ4f2r_q_Zy0L-Yst5UOzxdgvn8G-7RaPr28KFIWi2sM5XR-u-nX4rpSMxhvTEpDHE=w16383",
+  pic: logo,
   dis: "Rent Read Repeat",
   mission: "we want novels to be affordable and available to everyone",
   Overview: [
