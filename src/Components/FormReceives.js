@@ -7,7 +7,10 @@ const FormReceives = () => {
   const data = useSelector((state) => state.FormData);
   return (
     <div className="formReceives">
-      <div className="flexbox" style={{ justifyContent: "space-between" }}>
+      <div
+        className="flexbox formheader"
+        style={{ justifyContent: "space-between" }}
+      >
         <h3>Form Receives</h3>
         <FontAwesomeIcon icon={faXmark} />
       </div>

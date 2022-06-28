@@ -11,8 +11,8 @@ import FormReceives from "../Components/FormReceives";
 const Dashboard = () => {
   return (
     <div className="Dashboard">
-      <h3>Welcome !</h3>
-      <div className="flexbox">
+      <h2>Welcome !</h2>
+      <div className="flexbox" style={{ justifyContent: "space-between" }}>
         <div className="box1">
           <div className="flexbox boxicon">
             <div className="dollersign">

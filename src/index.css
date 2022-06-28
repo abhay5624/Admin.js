@@ -99,16 +99,17 @@ aside {
   padding-left: 5%;
   background-color: rgb(247, 244, 244);
 }
-.Dashboard h3 {
-  padding-left: 30px;
+.Dashboard h2 {
+  padding-left: 1vw;
   font-weight: 600;
 }
 .box1,
 .box2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 10px;
   background-color: white;
   border-radius: 4px;
-  min-width: 31.2%;
+  min-width: 30.2%;
   min-height: 180px;
   margin: 1vw;
 }
@@ -119,14 +120,14 @@ aside {
   font-size: 30px;
   background-color: rgb(152, 57, 207);
   color: white;
-  padding: 30px 30px;
+  padding: 20px 20px;
   border-radius: 60px;
 }
 .dollersign {
   font-size: 30px;
   background-color: rgb(126, 226, 126);
   color: white;
-  padding: 30px 40px;
+  padding: 20px 30px;
   border-radius: 60px;
 }
 .detail {
@@ -171,10 +172,11 @@ aside {
   background-color: #ec68ba;
   font-size: 30px;
   color: white;
-  padding: 30px 30px;
+  padding: 20px 20px;
   border-radius: 60px;
 }
 .Userchart {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 65%;
   height: 480px;
   background-color: white;
@@ -193,6 +195,7 @@ aside {
   font-weight: 500;
 }
 .DonnutChart {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: #ffffff;
   min-height: 480px;
   min-width: 31.2%;
@@ -205,17 +208,29 @@ aside {
   padding: 0;
 }
 .formReceives {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
   max-width: 40%;
   margin-left: 1.2vw;
   margin-top: 2vw;
-  padding: 40px;
 }
 .formReceives h3 {
   font-weight: 600;
   padding: 5px;
 }
 .formsection {
-  padding: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   margin: 5px;
+
+  border-radius: 5px;
+}
+.formsection:hover {
+  background-color: #f0f3f7;
+}
+.formheader {
+  background-color: #eee;
+  padding: 10px;
+  padding-inline: 40px;
 }
