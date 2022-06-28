@@ -1,62 +1,54 @@
-import React, { useState, useEffect } from "react";
-import { ProfileActtion } from "../Actions";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-const Overview = () => {
+import { ProfileActtion } from "../Actions";
+const Mission = () => {
   const data = useSelector((state) => state.MyProfile);
   const Dispatch = useDispatch();
-  const [Pop, setPop] = useState(false);
-
-  const PopupHandler = () => {
-    setPop(!Pop);
+  const [PopUp, setPopUp] = useState(false);
+  const PopupHandler = (e) => {
+    setPopUp(!PopUp);
   };
-  const EditOverviewHandler = (e) => {
+  const EditMissionHandler = (e) => {
     e.preventDefault();
     const children = e.target.parentElement;
+
     const Paragraph1 = children.childNodes[0].value;
-    const Paragraph2 = children.childNodes[1].value;
-    const total = [Paragraph1, Paragraph2];
+    console.log(Paragraph1);
     let profileData = data;
-    profileData.Overview = total;
+    profileData.mission = Paragraph1;
     Dispatch(ProfileActtion(profileData));
-    setPop(!Pop);
+    setPopUp(!PopUp);
   };
   return (
-    <div className="Overview">
+    <div className="mission">
       <div className="flexbox" style={{ justifyContent: "space-between" }}>
-        <h3>Overview</h3>
+        <h3>Mission</h3>
         <button
-          onClick={() => {
-            PopupHandler();
+          onClick={(e) => {
+            PopupHandler(e);
           }}
         >
           Edit
         </button>
       </div>
-
-      <p>{data.Overview[0]}</p>
-      <p>{data.Overview[1]}</p>
-      {Pop && (
+      <p>{data.mission}</p>
+      {PopUp && (
         <>
           <div className="PopUp">
-            <h3>Edit Overview</h3>
+            <h3>Edit Mission</h3>
             <form>
               <textarea
                 name="paragraph1"
                 id=""
-                defaultValue={data.Overview[0]}
+                defaultValue={data.mission}
               ></textarea>
               <br />
-              <textarea
-                name="paragraph2"
-                id=""
-                defaultValue={data.Overview[1]}
-              ></textarea>
-              <br />
+
               <input
                 type="submit"
                 value="Done"
                 onClick={(e) => {
-                  EditOverviewHandler(e);
+                  EditMissionHandler(e);
                 }}
               />
             </form>
@@ -68,4 +60,4 @@ const Overview = () => {
   );
 };
 
-export default Overview;
+export default Mission;
