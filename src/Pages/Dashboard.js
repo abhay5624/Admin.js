@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Todolist } from "../Components/Todolist";
 import {
   faCartPlus,
   faDollarSign,
@@ -78,7 +79,13 @@ const Dashboard = () => {
         <UserChart />
         <PagesChart />
       </div>
-      <FormReceives />
+      <div
+        className="flexbox"
+        style={{ width: "100%", maxHeight: "fit-content" }}
+      >
+        <FormReceives />
+        <Todolist />
+      </div>
     </div>
   );
 };
